@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LogIn">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewTituloLog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="LogIn"
+                android:textAlignment="center"
+                android:textSize="50sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="E-mail"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10sp" />
+
+            <EditText
+                android:id="@+id/editTextMail"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40sp" />
+
+            <TextView
+                android:id="@+id/textViewPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contraseña"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40sp" />
+
+            <Button
+                android:id="@+id/buttonLogIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log In" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40sp" />
+
+            <Button
+                android:id="@+id/buttonRegistrarse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrarse" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    
