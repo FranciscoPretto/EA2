@@ -1,0 +1,82 @@
+1.1 Motivación
+
+El procesamiento paralelo es un tipo de procesamiento de la información, que permite
+que se ejecuten varios procesos concurrentemente [5, 10, 17, 30, 35]. El procesamiento
+paralelo puede ser de diferentes tipos: i) Un tipo es ejecutar procesos independientes
+simultáneamente, los cuales son controlados por el sistema operativo (usando tiempo
+compartido, multiprogramación y multiprocesamiento). ii) Otro tipo es descomponer los
+programas en tareas (controladas por el sistema operativo, los compiladores, los
+lenguajes de programación, etc.), algunas de las cuales pueden ser ejecutadas en paralelo.
+iii) Finalmente, el último tipo se basa en usar técnicas de encauzamiento para introducir
+paralelismo a nivel de instrucciones, lo que implica dividirlas en pasos sucesivos que
+pueden ser ejecutados en paralelo, cada uno procesando datos diferentes.
+Es difícil determinar qué resulta más natural, sí el procesamiento paralelo o el
+secuencial. Los enfoques paralelos resultan una necesidad, dada la constante afirmación
+de que la velocidad máxima en procesamiento secuencial se alcanzará prontamente,
+excepto que aparezcan avances en otras áreas que definan nuevos mecanismos de
+procesamiento, los cuales pueden venir de nuevos descubrimientos en áreas tales como
+computación AND, computación cuántica, etc. En los últimos años, el uso extensivo del
+paralelismo ha estado ligada a varios hechos [2, 10, 13, 20]:
+
+- La necesidad de mayor potencia de cálculo: independientemente de que la potencia
+de los procesadores aumente, siempre habrá un limite que dependerá de la tecnología
+del momento. Para aumentar la potencia de cálculo, además de los progresos
+tecnológicos que permitan aumentar la velocidad de cálculo, se requieren nuevos
+paradigmas basados en cálculo paralelo. Es decir, una manera de aumentar la
+velocidad de cálculo es usar múltiples procesadores juntos. Así, un problema es
+dividido en partes, cada una de las cuales es ejecutada en paralelo en diferentes
+procesadores. La programación para esta forma de cálculo es conocida como
+programación paralela, y las plataformas computacionales donde pueden ser
+ejecutadas estas aplicaciones son los sistemas paralelos y distribuidos. La idea que se
+usa es que al tener n computadores se debería tener n veces más poder de cálculo, lo
+que conllevaría a que el problema pudiera resolverse en 1/n veces del tiempo
+requerido por el secuencial. Por supuesto, esto bajo condiciones ideales que
+raramente se consiguen en la práctica. Sin embargo, mejoras sustanciales pueden ser
+alcanzadas dependiendo del problema y la cantidad de paralelismo presente en el
+mismo.
+
+- Una mejor relación costo/rendimiento: en el orden económico, es muy importante
+tener máquinas con excelente relación costo/rendimiento. Normalmente, el mayor
+poder de cálculo genera una explosión de costos que a veces lo hacen prohibitivo.
+Una manera para lograr mayor poder de cálculo sin costos excesivos es hacer
+cooperar muchos elementos de cálculo de bajo poder, y por consiguiente, de bajos
+costos.
+
+- Potencia expresiva de los modelos de procesamiento paralelo: muchos problemas
+son más fáciles de modelar usando paradigmas paralelos, ya sea por la estructura que
+se usa para su resolución o porque el problema es intrínsecamente paralelo. Es decir,
+si desde el principio se puede pensar en los mecanismos paralelos/concurrentes para
+resolver un problema, eso puede facilitar la implantación del modelo computacional.
+Esto podría permitir obtener mejores soluciones para los problemas a resolver, en
+tiempos razonables de ejecución. Así, este enfoque permite el surguimiento de
+modelos de cálculos diferentes, a los modelos secuenciales. En pocas palabras,
+además del procesamiento de paralelismo para mejorar los tiempos de ejecución se
+agrega la ganancia conceptual, al poder resolver los problemas con nuevos métodos
+de resolución hasta ahora imposibles de ejecutarse en máquinas secuenciales.
+Así, la computación paralela está jugando un papel fundamental en el avance de todas
+las ciencias, abriendo las puertas para explotar, más allá de las fronteras ya conocidas,
+impresionantes poderes de cálculo que permiten modelos más realistas (pasar de la
+segunda a la tercer dimensión, etc.). A pesar de que del área de computación paralela se
+habla mucho, en realidad es poco lo que se conoce. Quizás el mayor problema en
+computación paralela y distribuida es que no son ideas fáciles para entender e
+implementar. Existen diferentes enfoques para aplicar paralelismo. Incluso, para ciertas
+aplicaciones algunos enfoques pueden ser contraproducentes. Además, existen varios
+tipos de arquitecturas, modelos de programación, lenguajes y compiladores, compitiendo
+por conquistar el mercado. Por otro lado, actualmente los precios baratos de los PC, con
+su incremento en poder de cálculo, los hacen un formidable competidor contra los
+emergentes computadores paralelos. También las estaciones de trabajo, las cuales ofrecen
+amigables y poderosas interfaces, son otras fuertes competidoras.
+Hay muchas áreas de aplicación donde el poder de cálculo de una computadora
+simple es insuficiente para obtener los resultados deseados. Las computadoras paralelas y
+distribuidas pueden producir resultados más rápidos. Por ejemplo, en algunas áreas de
+cálculo científico, el tiempo estimado de computación para obtener resultados
+interesantes usando un computador simple, podría ser tan largo que excedería el tiempo
+esperado en que el mismo puede fallar. O peor aun, en el área industrial una simulación
+que tome algunas semanas para alcanzar resultados, es usualmente inaceptable en
+ambientes de diseño, en los cuales los tiempos con los que cuenta el diseñador son cortos.
+Además, hay ciertos problemas que tienen fechas límites especificas para calcularse (por
+ejemplo, si el programa de predicción del tiempo para el día de mañana dura dos días
+perdería el sentido ejecutarlo). Un punto inicial de arranque sería conocer qué áreas de
+aplicación podrían beneficiarse al usar paralelismo. Indudablemente, el primer grupo
+serían aquellas áreas donde el paralelismo es aparente, aunque no se pueda explotar en
+máquinas secuenciales. 
